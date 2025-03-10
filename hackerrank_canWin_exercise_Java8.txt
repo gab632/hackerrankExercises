@@ -1,0 +1,42 @@
+public class Solution {
+
+    public static boolean canWin(int leap, int[] game) {
+        // Return true if you can win the game; otherwise, return false.
+
+        int currentPosition = 0;
+        boolean canMoveForward = true;
+
+        while(canMoveForward){
+            int nextPosition = tryToMoveForward(game, currentPosition);
+            
+            if(nextPosition > currentPosition){
+                currentPosition = nextPosition;
+                canMoveForward = true;
+            } else {
+                canMoveForward = false;
+                int stepBack = tryToMoveBackwards(game, currentPosition);
+                if(stepBack == currentPosition){
+                    return false;
+                } else {
+                    currentPosition = stepBack;
+                    canMoveForward = true;
+                }
+            }
+            if(currentPosition == game.length-1
+                || currentPosition + leap >= game.length){
+                    break;
+                }
+            
+        }
+        return true;
+        
+    }
+    
+    public static int tryToMoveForward(int[] game, int index){
+        
+    }
+    
+    public static int tryToMoveBackwards(int[]game, int index){
+        
+    }
+}
