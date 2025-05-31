@@ -1,0 +1,21 @@
+<span class="central-textlogo__image sprite svg-Wikipedia_wordmark">
+Wikipedia
+</span>
+<strong class="jsl10n localized-slogan" data-jsl10n="portal.slogan">The Free Encyclopedia</strong>
+</h1>
+</div>
+<nav data-jsl10n="top-ten-nav-label" aria-label="Top languages" class="central-featured" data-el-section="primary links">
+<!-- #1. en.wikipedia.org - 1,750,608,000 views/day -->
+<div class="central-featured-lang lang1" lang="en" dir="ltr">
+<a id="js-link-box-en" href="//en.wikipedia.org/" title="English — Wikipedia — The Free Encyclopedia" class="link-box" data-slogan="The Free Encyclopedia">
+<strong>English</strong>
+<small>6,974,000+ <span>articles</span></small>
+</a>
+</div>
+<!-- #2. ja.wikipedia.org - 203,372,000 views/day -->
+<div class="central-featured-lang lang2" lang="ja" dir="ltr">
+<a id="js-link-box-ja" href="//ja.wikipedia.org/" title="Nihongo — ウィキペディア — フリー百科事典" class="link-box" data-slogan="フリー百科事典">
+<strong>日本語</strong>
+<small>1,457,000+ <span>記事</span></small>
+</a>
+</div>
