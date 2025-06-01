@@ -5,10 +5,12 @@ import java.math.*;
 import java.util.regex.*;
 
 public class TagContentExtractor{
+
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
         int testCases = Integer.parseInt(in.nextLine());
+
         while(testCases>0){
             String line = in.nextLine();
 
@@ -16,76 +18,83 @@ public class TagContentExtractor{
             Stack<String> tags = new Stack<>();
             String content = "";
             String tag = "";
-
+            boolean firstEndingTagFound = false;
+//            System.out.println(line.charAt(15));
             for(int i = 0; i < line.length(); i++){
-
+//                System.out.println(i);
                 if(line.charAt(i) == '<'){
+//                    System.out.println("Tag found - index " + i);
                     tag = findTag(line, i);
-                    i = i + tag.length();
+//                    System.out.println(tag);
+                    i = i + tag.length() - 1;
 
                     if(tag.charAt(1) == '/'){
-
+                        firstEndingTagFound = true;
                         if(tags.isEmpty()){
                             content = "";
                             tag = "";
-                            break;
+//                            break;
 
                         } else {
                             if(tags.peek().equals(tag.replace("/", ""))){
+//                                System.out.printf("Equals %s, %s\n", tags.peek(), tag.replace("/", ""));
                                 tags.pop();
                                 if(tags.isEmpty()){
                                     System.out.println(content);
                                 } else {
                                     tag = "";
-                                    break;
+//                                    break;
                                 }
-
-
-
                             } else {
                                 content = "";
                                 tag = "";
-                                break;
+//                                break;
                             }
-
                         }
 
                     } else {
                         tags.push(tag);
                         content = "";
                         tag = "";
-                        break;
+//                        break;
                     }
 
                 } else {
-
-                    StringBuilder sb = new StringBuilder();
-                    sb.append(line.charAt(i));
-                    int nextTagIndex = line.indexOf('<');
-                    if(nextTagIndex == -1){
+                    int nextTagIndex = line.indexOf('<', i + 1);
+                    if(nextTagIndex == -1) {
                         content = "";
-                        tag= "";
+                        tag = "";
                         i = line.length();
-                        break;
+                        System.out.println("None");
                     } else {
-                        content = line.substring(i, nextTagIndex + 1);
-                        i = nextTagIndex;
-                        break;
+                        if(firstEndingTagFound){
+                            i = line.indexOf('<', i + 1) - 1;
+
+                        } else {
+    //                    System.out.println("index: " + i + " - next tag index:" + nextTagIndex);
+                            content = line.substring(i, nextTagIndex);
+                            i = nextTagIndex - 1;
+                            //                        System.out.println("i as next tag index: " + i);
+                            //                        break;
+
+                        }
                     }
+
                 }
             }
 
             testCases--;
         }
+
     }
 
     public static String findTag(String text, int i){
-        String substring = text.substring(i);
         Pattern p = Pattern.compile("</?[\\w\\s]*>");
-        Matcher m = p.matcher(substring);
-        return m.group();
-
+        Matcher m = p.matcher(text);
+            String tag = m.group();
+            return tag;
     }
+
 
 
 
