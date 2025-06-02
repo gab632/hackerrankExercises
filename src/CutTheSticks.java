@@ -34,12 +34,15 @@ public class CutTheSticks {
         for(int i = 0; i < arr.size(); i++){
 //            int temp = arr.get(i) - min;
             arr.set(i, arr.get(i) - min);
-            if(arr.get(i) == 0){
-                arr.remove(i);
-                i--;
-            }
+//            if(arr.get(i) == 0){
+//                arr.remove(i);
+//                i--;
+//            }
         }
-//        arr.removeIf(num -> num == 0);
+        int finalMin = min;
+
+        arr.removeIf(num -> num == 0);
+
         // Recursive calls to the updated arr.
         result.addAll(cutTheSticks(arr));
         return result;
@@ -47,9 +50,13 @@ public class CutTheSticks {
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(5, 4, 4, 2, 2, 8));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 3, 3, 2, 1
+        ));
 
 //                Arrays.asList(5, 4, 4, 2, 2, 8);
         System.out.println(cutTheSticks(list));
+        System.out.println(cutTheSticks(list2));
+
 
 
 
