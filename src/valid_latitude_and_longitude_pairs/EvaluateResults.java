@@ -18,6 +18,8 @@ public class EvaluateResults {
 
         String line;
         String expectedResult;
+
+        // skip the first line of the file, because it contains non-relevant data.
         line = reader.readLine();
         System.out.printf("%15s - %15s - %s\n", "My result", "Expected Result", "input values");
 
@@ -25,10 +27,14 @@ public class EvaluateResults {
 //            System.out.print(ValidPairs.patternChecker(line) + " - ");
 //            System.out.print(readerForExpectedOutput.readLine() + " - ");
 //            System.out.println(line);
-
-            System.out.printf("%15s - %15s - %s\n", ValidPairs.patternChecker(line), readerForExpectedOutput.readLine(), line);
+//            if(!ValidPairs.patternChecker(line).equalsIgnoreCase(readerForExpectedOutput.readLine())){
+//            }
+            String myResult = ValidPairs.patternChecker(line);
+            expectedResult = readerForExpectedOutput.readLine();
+            if(!myResult.equalsIgnoreCase(expectedResult)){
+                System.out.printf("%15s - %15s - %s\n", myResult, expectedResult, line);
+            }
+//            System.out.printf("%15s - %15s - %s\n", ValidPairs.patternChecker(line), readerForExpectedOutput.readLine(), line);
         }
-
-
     }
 }

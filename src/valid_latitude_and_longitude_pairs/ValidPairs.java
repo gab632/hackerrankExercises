@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidPairs {
-        private static Pattern p = Pattern.compile("^\\([+-]?((90(\\.0+)*)|([1-8][0-9]?(\\.\\d+)*)), [+-]?((180(\\.0+)*)|(1?[1-7][0-9](\\.\\d+)*)|([1-9][0-9](\\.\\d+)*))\\)$");
+        private static Pattern p = Pattern.compile("^\\([+-]?((90(\\.0+)*)|([1-8][0-9]?(\\.\\d+)*)), [+-]?((180(\\.0+)*)|(1?[1-7][0-9](\\.\\d+)*)|(1[0-7][0-9](\\.\\d+)*)|([1-9][0-9](\\.\\d+)*))\\)$");
         private static Matcher m;
 
     public static void main(String[] args) {
