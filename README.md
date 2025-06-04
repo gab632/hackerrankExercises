@@ -1,3 +1,3 @@
 Some hackerrank exercises. 
-Some of them are work in prograss. 
-Some of them are solved. 
+Some of them are completed.
+Some of them are yet to be solved. 
