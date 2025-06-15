@@ -38,7 +38,6 @@ public class Solution {
             }
             listContainsTheSameBdValue = false;
         }
-        System.out.println(valuesAndRepresentations);
         int index = 0;
         while(index < s.length){
             if(valuesAndRepresentations.get(valuesAndRepresentations.firstKey()).size() == 1){
