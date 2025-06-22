@@ -1,7 +1,6 @@
-import java.io.*;
+package tagContentExtractor;
+
 import java.util.*;
-import java.text.*;
-import java.math.*;
 import java.util.regex.*;
 
 public class TagContentExtractor{
@@ -91,8 +90,9 @@ public class TagContentExtractor{
     public static String findTag(String text, int i){
         Pattern p = Pattern.compile("</?[\\w\\s]*>");
         Matcher m = p.matcher(text);
-            String tag = m.group();
-            return tag;
+        m.find();
+        String tag = m.group();
+        return tag;
     }
 
 

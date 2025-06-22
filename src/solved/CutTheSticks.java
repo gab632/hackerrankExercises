@@ -5,12 +5,10 @@ import java.util.List;
 public class CutTheSticks {
 
     /*
-     * Complete the 'cutTheSticks' function below.
-     *
+     * Complete the 'cutTheSticks' function below.     *
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts INTEGER_ARRAY arr as parameter.
      */
-
     public static List<Integer> cutTheSticks(List<Integer> arr) {
         // Write your code here
         List<Integer> result = new ArrayList<>();

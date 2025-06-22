@@ -1,4 +1,4 @@
-package hearts_minds_challenge;
+package solved.detect_html_links.hearts_minds_challenge;
 
 import java.io.*;
 import java.net.URI;
