@@ -1,4 +1,4 @@
-package find_a_word;
+package unsolved.find_a_word;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -13,7 +13,7 @@ public class Solution {
 
         ArrayList<String> lines = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-//        FileReader reader = new FileReader(0"find_a_word/testCase09.txt");
+//        FileReader reader = new FileReader(0"unsolved.find_a_word/testCase09.txt");
         Path path = Path.of("find_a_word/testCase09.txt");
         BufferedReader reader = Files.newBufferedReader(path);
 //        int n = Integer.valueOf(reader.readLine());

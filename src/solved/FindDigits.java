@@ -1,3 +1,5 @@
+package solved;
+
 public class FindDigits {
     public static void main(String[] args) {
         int[] tests = new int[]{ 123456789

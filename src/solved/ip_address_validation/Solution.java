@@ -1,6 +1,5 @@
-package ip_address_validation;
+package solved.ip_address_validation;
 
-import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 

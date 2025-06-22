@@ -1,4 +1,4 @@
-package detect_html_links;
+package solved.detect_html_links;
 
 import java.io.*;
 import java.util.*;

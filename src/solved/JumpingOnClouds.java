@@ -1,3 +1,5 @@
+package solved;
+
 public class JumpingOnClouds {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package javaReflectionAPI;
+package solved.javaReflectionAPI;
 
 import java.lang.reflect.*;
 import java.util.*;

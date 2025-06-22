@@ -1,4 +1,5 @@
-import java.io.*;
+package solved;
+
 import java.util.Scanner;
 import java.util.TreeSet;
 import java.util.regex.Matcher;

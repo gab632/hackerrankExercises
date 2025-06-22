@@ -1,7 +1,6 @@
-package javaReflectionAPI;
+package solved.javaReflectionAPI;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,7 +14,7 @@ public class SignatureCreator {
     public static List<String> createMethodSignatures(File textFile) throws IOException {
         List<String> methodSignatures = new ArrayList<>();
 
-        Path path = Paths.get("src/javaReflectionAPI/inputNames.txt");
+        Path path = Paths.get("src/solved.javaReflectionAPI/inputNames.txt");
         try(BufferedReader reader = Files.newBufferedReader(path)){
             String methodName;
 
@@ -32,8 +31,8 @@ public class SignatureCreator {
 
     public static void storeMethodSignatures(List<String> signatures) throws IOException {
 
-//        File outputFile = new File("src/javaReflectionAPI/output.txt");
-        Files.write(Path.of("src/javaReflectionAPI/output.txt"), signatures);
+//        File outputFile = new File("src/solved.javaReflectionAPI/output.txt");
+        Files.write(Path.of("src/solved.javaReflectionAPI/output.txt"), signatures);
 
     }
 }

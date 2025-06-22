@@ -1,7 +1,6 @@
-package stack_exchange_scraper;
+package solved.stack_exchange_scraper;
 
 import java.io.*;
-import java.sql.SQLOutput;
 import java.util.*;
 import java.util.regex.*;
 
@@ -12,7 +11,7 @@ public class Scraper {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 
         Scanner scanner = new Scanner(System.in);
-        File testDatei = new File("src/stack_exchange_scraper/TestDatei0.txt");
+        File testDatei = new File("src/solved.stack_exchange_scraper/TestDatei0.txt");
         BufferedReader reader = new BufferedReader(new FileReader(testDatei));
 
         Pattern idPattern = Pattern.compile("<a href=\"/questions/[0-9]+/");

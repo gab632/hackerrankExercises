@@ -1,4 +1,4 @@
-package valid_latitude_and_longitude_pairs;
+package solved.valid_latitude_and_longitude_pairs;
 
 import java.io.*;
 
@@ -11,8 +11,8 @@ public class EvaluateResults {
 //        System.out.println(ValidPairs.patternChecker(test2));
 
 
-        File inputFile = new File("src/valid_latitude_and_longitude_pairs/testInputValidPairs.txt");
-        File expected = new File("src/valid_latitude_and_longitude_pairs/ExpectedOutput.txt");
+        File inputFile = new File("src/solved.valid_latitude_and_longitude_pairs/testInputValidPairs.txt");
+        File expected = new File("src/solved.valid_latitude_and_longitude_pairs/ExpectedOutput.txt");
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
         BufferedReader readerForExpectedOutput = new BufferedReader(new FileReader(expected));
 

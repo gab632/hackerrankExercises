@@ -1,4 +1,4 @@
-package java_big_decimal;
+package solved.java_big_decimal;
 
 import java.math.BigDecimal;
 import java.util.*;

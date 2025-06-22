@@ -1,6 +1,5 @@
-package valid_latitude_and_longitude_pairs;
+package solved.valid_latitude_and_longitude_pairs;
 
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

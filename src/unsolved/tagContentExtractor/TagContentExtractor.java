@@ -1,4 +1,4 @@
-package tagContentExtractor;
+package unsolved.tagContentExtractor;
 
 import java.util.*;
 import java.util.regex.*;

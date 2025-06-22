@@ -1,4 +1,4 @@
-package javaReflectionAPI;
+package solved.javaReflectionAPI;
 
 class Student{
     private String name;
