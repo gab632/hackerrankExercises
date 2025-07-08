@@ -3,9 +3,9 @@ package unsolved;
 public class AppendAndDelete {
 
     public static void main(String[] args) {
-//        System.out.println(appendAndDelete2("y", "yu", 2));
-//        System.out.println(appendAndDelete2("abcdert", "abcd", 10));
-        System.out.println(appendAndDelete2("hackerhappy", "hackerrank", 9));
+        System.out.println(appendAndDelete2("y", "yu", 2));
+        System.out.println(appendAndDelete2("abcdert", "abcd", 10));
+//        System.out.println(appendAndDelete2("hackerhappy", "hackerrank", 9));
 
     }
 
