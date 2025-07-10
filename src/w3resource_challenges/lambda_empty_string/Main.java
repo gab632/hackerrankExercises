@@ -1,8 +1,6 @@
-package lambda_empty_string;
+package w3resource_challenges.lambda_empty_string;
 
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Main {

@@ -1,4 +1,4 @@
-package lambda_exercises;
+package w3resource_challenges.lambda_exercises;
 
 public interface Subtraction {
 

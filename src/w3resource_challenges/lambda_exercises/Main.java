@@ -1,14 +1,11 @@
-package lambda_exercises;
+package w3resource_challenges.lambda_exercises;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 public class Main {
 

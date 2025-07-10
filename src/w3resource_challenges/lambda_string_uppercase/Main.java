@@ -1,4 +1,4 @@
-package lambda_string_uppercase;
+package w3resource_challenges.lambda_string_uppercase;
 
 import org.w3c.dom.ls.LSOutput;
 
@@ -78,7 +78,7 @@ public class Main {
                                 .map(s -> s.toLowerCase())
                                 .toList()
                 );
-        System.out.println("\nUsing stream() map() toList():");
+        System.out.println("\nUsing stream() map() toList(): 👇");
         nestedListsSimplified.apply(testList).forEach(System.out::println);
 
         System.out.println("""
@@ -86,10 +86,25 @@ public class Main {
                 that maps a list of mixed-case strings 
                 to a list of alternating uppercase and lowercase letters.
                 """);
+        System.out.println("Alternating: 👇");
+        List<String> alternating = testList.stream()
+                .map( s -> {
+                    return ((testList.indexOf(s) % 2 == 0) ? s.toLowerCase() : s.toUpperCase());
+                        }
+                ).toList();
+        alternating.forEach(System.out::println);
 
-
-
+        System.out.println("""
+                Write a Java program to chain lambda expressions 
+                to convert a list of strings first to uppercase 
+                and then sort them alphabetically.
+                """);
+        List<String> uppercaseThenSorted = strings.stream()
+                .map(s -> s.toUpperCase())
+                .sorted()
+                .toList();
+        System.out.println("Uppercase, then sorted alphabetically👇");
+        uppercaseThenSorted.forEach(s -> System.out.println('\t' + s));
     }
-
 
 }
